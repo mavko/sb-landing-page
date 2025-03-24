@@ -134,7 +134,7 @@ export const FooterCta = () => (
 					<h2 className='max-w-3xl text-center font-bold text-4xl leading-tight tracking-tighter sm:text-5xl md:max-w-4xl md:text-6xl lg:leading-[1.1] text-white mx-auto'>
 						Are you ready to Ship?
 					</h2>
-					<p className='text-white/80 text-center text-lg text-pretty max-w-xl mx-auto'>
+					<p className='text-white/90 text-center text-lg text-pretty max-w-xl mx-auto'>
 						It's never been easier to go from idea to real product than now
 						thanks to Bolt. Let's build the app you always wanted.
 					</p>
