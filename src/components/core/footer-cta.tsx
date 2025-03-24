@@ -124,16 +124,20 @@ const rows = [
 ]
 
 export const FooterCta = () => (
-	<section className=' h-[400px] ' id='features'>
+	<section className=' h-[450px] ' id='features'>
 		<div
 			aria-hidden='true'
 			className='relative h-full overflow-hidden  py-24 ring-inset sm:py-32 bg-neutral-950'>
-			<div className=' backdrop-blur-[1px] absolute inset-0 z-10'></div>
+			<div className='bg-black/5 backdrop-blur-[1px] absolute inset-0 z-10'></div>
 			<div className='-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 mx-auto w-full max-w-[90%] text-center z-20'>
 				<div className='relative z-20 space-y-12'>
 					<h2 className='max-w-3xl text-center font-bold text-4xl leading-tight tracking-tighter sm:text-5xl md:max-w-4xl md:text-6xl lg:leading-[1.1] text-white mx-auto'>
 						Are you ready to Ship?
 					</h2>
+					<p className='text-white/80 text-center text-lg text-pretty max-w-xl mx-auto'>
+						It's never been easier to go from idea to real product than now
+						thanks to Bolt. Let's build the app you always wanted.
+					</p>
 					<RainbowButton>Create an App</RainbowButton>
 				</div>
 			</div>
