@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-sans: 'Inter', 'sans-serif';
+	--animation-rainbow-speed: 2s;
+	--animation-move-x-speed: 10s;
+	--color-1: 0 100% 63%;
+	--color-2: 270 100% 63%;
+	--color-3: 210 100% 63%;
+	--color-4: 195 100% 63%;
+	--color-5: 90 100% 63%;
+}
+@keyframes rainbow {
+	0% {
+		background-position: 0%;
+	}
+	100% {
+		background-position: 200%;
+	}
+}
+@keyframes move-x {
+	0% {
+		transform: translateX(var(--move-x-from));
+	}
+	100% {
+		transform: translateX(var(--move-x-to));
+	}
+}
+.animate-rainbow {
+	animation: rainbow var(--animation-rainbow-speed, 2s) infinite linear;
+}
+
+.animate-line-shadow {
+	animation: line-shadow var(--animation-line-shadow-speed, 15s) infinite linear;
+}

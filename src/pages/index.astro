@@ -1,0 +1,28 @@
+---
+import { ClientRouter } from 'astro:transitions'
+import Header from '../components/header.astro'
+import { FooterCta } from '../components/core/footer-cta.tsx'
+import Layout from '../layouts/Layout.astro'
+import { Customers } from '../components/core/customers.tsx'
+import Nav from '../components/nav.astro'
+import Quotes from '../components/quotes.astro'
+import Divider from '../components/divider.astro'
+import PoweredBy from '../components/powered-by.astro'
+---
+
+<Layout>
+	<main
+		class='flex flex-col divide-y divide-white/10 border border-white/10 container bg-neutral-950 mx-auto'
+	>
+		<Nav />
+		<Header />
+		<Customers client:load />
+		<Divider />
+		<Quotes />
+		<Divider />
+		<PoweredBy />
+		<Divider />
+		<FooterCta client:load />
+		<Divider />
+	</main>
+</Layout>
