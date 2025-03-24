@@ -7,7 +7,7 @@ import { RainbowButton } from './core/rainbow-btn'
 <section
 	class='flex flex-col items-center justify-center gap-6 relative overflow-hidden rounded-lg bg-gray-950/[2.5%] after:pointer-events-none after:absolute after:inset-0 bg-[image:radial-gradient(var(--pattern-fg)_1px,_transparent_0)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-white)]/10 px-4 py-16 sm:px-16'
 >
-	<a href='https://bolt.new' class=''>
+	<div class='pt-4'>
 		<img
 			src={boltLogo.src}
 			class='bg-transparent'
@@ -15,16 +15,16 @@ import { RainbowButton } from './core/rainbow-btn'
 			height='115'
 			alt='Bolt.new'
 		/>
-	</a>
+	</div>
 
 	<h1
-		class='max-w-3xl text-center font-bold text-4xl leading-tight tracking-tighter sm:text-5xl md:max-w-4xl md:text-6xl lg:leading-[1.1] text-white'
+		class='max-w-3xl text-center font-bold text-3xl leading-tight tracking-tighter sm:text-5xl md:max-w-4xl md:text-6xl lg:leading-[1.1] text-white'
 	>
 		How <TextLoopVariant client:load />
 		teams <br />work together with AI
 	</h1>
 	<p
-		class='text-base font-medium font-sans text-pretty text-white/80 text-center max-w-xl'
+		class='text-sm sm:text-base font-medium font-sans text-pretty text-white/80 text-center max-w-xl'
 	>
 		Turn text into working web apps. Bolt handles the code while you focus on
 		your vision, letting you create and launch applications directly from your

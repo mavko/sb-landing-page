@@ -12,7 +12,7 @@ import PoweredBy from '../components/powered-by.astro'
 
 <Layout>
 	<main
-		class='flex flex-col divide-y divide-white/10 border border-white/10 container bg-neutral-950 mx-auto'
+		class='flex flex-col divide-y divide-white/10 border border-white/10 container bg-neutral-950 mx-auto mb-32 overflow-x-hidden'
 	>
 		<Nav />
 		<Header />
@@ -23,6 +23,5 @@ import PoweredBy from '../components/powered-by.astro'
 		<PoweredBy />
 		<Divider />
 		<FooterCta client:load />
-		<Divider />
 	</main>
 </Layout>

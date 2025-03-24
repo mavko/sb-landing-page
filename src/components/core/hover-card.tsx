@@ -28,14 +28,13 @@ const HoverCard = ({
 		key={name}
 		className={cn(
 			'group relative flex flex-col justify-between overflow-hidden',
-			// dark styles
-			'transform-gpu bg-background [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]',
+			'transform-gpu [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]',
 			className
 		)}
 		{...props}>
 		{/* Image component with full control */}
 		{backgroundImageComponent && (
-			<div className='absolute inset-0 ml-24 z-0 overflow-hidden'>
+			<div className='absolute inset-0 sm:ml-24 z-0 overflow-hidden'>
 				<div className='transition-transform duration-300 group-hover:scale-110'>
 					{backgroundImageComponent}
 				</div>
